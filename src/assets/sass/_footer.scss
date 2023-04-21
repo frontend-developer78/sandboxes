@@ -1,0 +1,130 @@
+// --------------- Start footer style
+#footer{
+    margin-top: 100px;
+    background: #f1f4ff;
+    // background: linear-gradient(to top, #f0f8fc, #fcffff);
+    border-top: 1px solid #f0f0f0;
+    @include margin-padding(60px,0,0,0,false);
+    position: relative;
+    .footer-content-section{
+        h5{
+            font: {
+                size: $default-font-size - 1px;
+            }
+            color: #1b1b1b;
+        }
+        ul{
+            li{
+                margin: 15px 0;
+                a{
+                    font: {
+                        size: $default-font-size - 2px;
+                    }
+                    color: rgb(68, 68, 68);
+                    i{
+                        vertical-align: -2px;
+                        font: {
+                            size: $default-font-size - 3px;
+                        }
+                    }
+                    @include transition-default(all,0.4s);
+                    &:hover{
+                        color: rgb(8, 1, 107);
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-social-content-section{
+        position: relative;
+        i.icon-bg-footer{
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            z-index: 0;
+            color: #20202028;
+            font: {
+                size:$default-font-size + 174px
+            }
+        }
+        h5{
+            font: {
+                size: $default-font-size - 1px;
+            }
+            color: #161616;
+        }
+        ul.address-link-section{
+            li{
+                margin: 15px 0;
+                a{
+                    font: {
+                        size: $default-font-size - 2px;
+                    }
+                    color: rgb(29, 29, 29);
+                    i{
+                        vertical-align: -2px;
+                        font: {
+                            size: $default-font-size - 3px;
+                        }
+                    }
+                    @include transition-default(all,0.4s);
+                    &:hover{
+                        color: rgb(255, 38, 0);
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .social-media-section{
+            ul{
+                li{
+                    @include transition-default(all,0.4s);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+    .copy-right-section{
+        flex-direction: column;
+        background: linear-gradient(to right, #002931, #00131f);
+        margin-top: 30px;
+        @include margin-padding(20px,0,2px,0,false);
+        p{
+            color: rgb(223, 223, 223);
+            margin-bottom: 15px!important;
+            font: {
+                size: $default-font-size - 2px;
+            }
+            strong{
+                color: rgb(255, 196, 0);
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    #footer{
+        .copy-right-section{
+            display: block!important;
+            p{
+                text-align: center;
+                font: {
+                    size:$default-font-size - 2px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:415px){
+    #footer{
+        .copy-right-section{
+            p{
+                font: {
+                    size:$default-font-size - 7px;
+                }
+            }
+        }
+    }
+}
