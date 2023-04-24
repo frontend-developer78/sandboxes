@@ -36,7 +36,7 @@
     .sidebar-system-container{
         margin-right: 15px;
         border-radius: 20px;
-        @include section-divider(flex,15%,15%);
+        @include section-divider(flex,17%,17%);
         flex-direction: column;
         background: rgb(1, 1, 87);
         background: url("../img/slidebar-system-bg.png");
@@ -219,7 +219,7 @@
         }
     }
     .acount-system-container{
-        @include section-divider(flex,85%,85%);
+        @include section-divider(flex,83%,83%);
         flex-direction: column;
         height: 100vh;
         overflow-x: hidden;

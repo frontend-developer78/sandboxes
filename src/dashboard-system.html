@@ -19,28 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['فسا',     11],
-            ['کازرون',      2],
-            ['فراشبند',  2],
-            ['فیروزآباد', 2],
-            ['شیراز',    7]
-          ]);
-  
-          var options = {
-            title: 'مدیریت آموزش و پرورش عشایر فارس',
-            is3D: true,
-          };
-  
-          var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-          chart.draw(data, options);
-        }
-    </script>
 </head>
 <body dir="rtl" class="bg-light bg-system">
     <!-- ------------------ Start system education section ------------------ -->
@@ -201,22 +179,6 @@
                                         <span>14</span>
                                         <h5>سوال های پرسیده شده</h5>
                                         <img src="assets/img/messages-question.svg" alt="message-question">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 chart-school-section">
-                        <div class="chart-inner">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 chart-header-content mb-4">
-                                        <h3>آمار مدارس و فراوانی آن بر حسب درصد</h3>
-                                        <p>آموزش و پرورش عشایری فارس دارای مدارس بسیاری است و از نظر گستردگی و پراکندگی از جمله بزرگترین آموزش و پرورش های کشور به حساب می آید و دارای چهار نمایندگی اصلی شامل <strong>نمایندگی فسا</strong> ، <strong>نمایندگی کازرون</strong> ، <strong>نمایندگی فیروزآباد</strong> و <strong>نمایندگی فراشبند</strong> می باشد.</p>
-                                        <span class="d-block text-center text-danger">آمار ارائه شده بر اساس تعداد مدارس هر نمایندگی می باشد و بر این اساس میزان و درصد هر کدام مشخص شده است.</span>
-                                    </div>
-                                    <div class="col-12 chart-3d-wrapper">
-                                        <div id="piechart_3d"></div>
                                     </div>
                                 </div>
                             </div>

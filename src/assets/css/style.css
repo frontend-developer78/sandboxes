@@ -2341,8 +2341,8 @@ body::-webkit-scrollbar-track {
   margin-right: 15px;
   border-radius: 20px;
   display: flex;
-  flex-basis: 15%;
-  max-width: 15%;
+  flex-basis: 17%;
+  max-width: 17%;
   flex-direction: column;
   background: rgb(1, 1, 87);
   background: url("../img/slidebar-system-bg.png");
@@ -2494,8 +2494,8 @@ body::-webkit-scrollbar-track {
 }
 #system .acount-system-container {
   display: flex;
-  flex-basis: 85%;
-  max-width: 85%;
+  flex-basis: 83%;
+  max-width: 83%;
   flex-direction: column;
   height: 100vh;
   overflow-x: hidden;
@@ -2850,7 +2850,7 @@ body::-webkit-scrollbar-track {
   color: rgb(233, 233, 233);
   padding: 2px 4px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 11px;
 }
 #system .acount-system-container .exclusive-acount-section {
   margin-top: 20px;
@@ -2864,29 +2864,18 @@ body::-webkit-scrollbar-track {
 }
 #system .acount-system-container .exclusive-acount-section .exclusive-acount-card {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px 30px 20px 30px;
   padding: 20px 20px 20px 20px;
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 #system .acount-system-container .exclusive-acount-section .exclusive-acount-card img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-left: 20px;
+  border-radius: 20px 15px 48px 8px;
   width: 262px;
   height: 262px;
-}
-#system .acount-system-container .exclusive-acount-section .exclusive-acount-card::before {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: 240px;
-  width: 50px;
-  height: 120%;
-  background-color: rgb(255, 255, 255);
-  z-index: 1;
-  transform: rotate(351deg);
 }
 #system .acount-system-container .exclusive-acount-section .exclusive-acount-card h4 {
   color: #32047a;
@@ -2924,6 +2913,8 @@ body::-webkit-scrollbar-track {
   color: #fff;
   font-size: 17px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1;
 }
 #system .acount-system-container .statistic-report-section .statistic-report-card-inner span {
   font-size: 31px;
@@ -2951,32 +2942,6 @@ body::-webkit-scrollbar-track {
 }
 #system .acount-system-container .statistic-report-section .report-card-bg-4 {
   background: linear-gradient(to right, #760307, #ef2b6b);
-}
-#system .acount-system-container .chart-school-section .chart-inner {
-  background: #fff;
-  margin-top: 30px;
-  padding: 30px 20px 20px 20px;
-  border-radius: 20px;
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-#system .acount-system-container .chart-school-section .chart-inner .chart-header-content h3 {
-  color: #02611b;
-  text-align: center;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-  font-size: 19px;
-}
-#system .acount-system-container .chart-school-section .chart-inner .chart-header-content p {
-  line-height: 30px;
-}
-#system .acount-system-container .chart-school-section .chart-inner .chart-header-content p strong {
-  color: #32047a;
-}
-#system .acount-system-container .chart-school-section .chart-inner .chart-3d-wrapper #piechart_3d {
-  max-width: 100%;
-  max-height: 500px;
 }
 #system .acount-system-container .new-report-upload-section {
   margin-top: 70px;
